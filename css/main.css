@@ -524,10 +524,6 @@ address {
   fill: #212121;
 }
 
-.is-open .icon-close .icon-close:active {
-  fill: #2196f3;
-}
-
 .is-open .icon-menu {
   display: none;
 }
@@ -887,6 +883,7 @@ address {
   width: 100%;
   height: 100%;
   background-color: var(--backdrop-bg-color);
+  z-index: 500;
   opacity: 1;
   transition: opacity var(--animation);
   overflow-y: scroll;
@@ -955,13 +952,25 @@ address {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-width: 320px;
+  min-width: 370px;
   width: 100%;
 }
 
-@media screen and (min-width: 767.98px) {
+@media screen and (min-width: 320px) and (max-width: 479.98px) {
   .modal-form__container {
-    min-width: 446px;
+    min-width: 240px;
+  }
+}
+
+@media screen and (min-width: 479.98px) {
+  .modal-form__container {
+    max-width: 450px;
+  }
+}
+
+@media screen and (min-width: 1199.98px) {
+  .modal-form__container {
+    min-width: 448px;
   }
 }
 
@@ -1053,17 +1062,28 @@ address {
 .checkbox {
   margin-top: 20px;
   margin-bottom: 30px;
-  text-align: center;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.14;
   color: var(--text-primery-color);
+}
+
+@media screen and (min-width: 320px) and (max-width: 479.98px) {
+  .checkbox {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1199.98px) {
+  .checkbox {
+    text-align: center;
+    font-size: 14px;
+  }
 }
 
 .checkbox__label {
   position: relative;
-  display: inline-block;
   cursor: pointer;
   padding-left: calc(7px + 16px);
 }
@@ -1096,11 +1116,22 @@ address {
 }
 
 .checkbox__link {
-  display: inline-block;
-  margin-left: 2px;
   color: var(--primery-accent-color);
   text-decoration: underline;
   transition: color var(--animation);
+}
+
+@media screen and (min-width: 320px) and (max-width: 479.98px) {
+  .checkbox__link {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1199.98px) {
+  .checkbox__link {
+    display: inline-block;
+    margin-left: 2px;
+  }
 }
 
 .checkbox__link:hover, .checkbox__link:focus {
@@ -1507,6 +1538,7 @@ address {
   justify-content: center;
   font-weight: 400;
   letter-spacing: 0.03em;
+  line-height: 1.71;
   padding: 0;
   color: var(--address--link-col);
 }
@@ -1627,7 +1659,8 @@ address {
 @media screen and (min-width: 767.98px) {
   .filter {
     justify-content: center;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 30px;
     min-width: 611px;
   }
