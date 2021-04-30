@@ -11,16 +11,19 @@
     font-size: 26px;
   }
 
+  &--accent-collor {
+    color: var(--primery-accent-color);
+  }
+
   &__footer-page {
     margin-bottom: 20px;
-    color: var(--white-color);
+    color: var(--primery-accent-color);
 
     @media screen and (max-width: 1199.98px) {
       margin: 0 auto 20px auto;
     }
-  }
-
-  &--accent-collor {
-    color: var(--primery-accent-color);
+    &--color {
+      color: var(--white-color);
+    }
   }
 }

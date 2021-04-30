@@ -690,9 +690,13 @@ address {
   }
 }
 
+.logo--accent-collor {
+  color: var(--primery-accent-color);
+}
+
 .logo__footer-page {
   margin-bottom: 20px;
-  color: var(--white-color);
+  color: var(--primery-accent-color);
 }
 
 @media screen and (max-width: 1199.98px) {
@@ -701,8 +705,8 @@ address {
   }
 }
 
-.logo--accent-collor {
-  color: var(--primery-accent-color);
+.logo__footer-page--color {
+  color: var(--white-color);
 }
 
 @media screen and (max-width: 767.98px) {
