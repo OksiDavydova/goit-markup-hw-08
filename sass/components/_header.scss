@@ -113,11 +113,11 @@
 }
 
 .mobile-menu__list {
-  // margin-bottom: 300px;
+  margin-bottom: 30px;
 
-  // @media screen and (min-width: 320px) and (max-width: 479.98px) {
-  //   margin-bottom: 200px;
-  // }
+  @media screen and (min-width: 320px) and (max-width: 479.98px) {
+    margin-bottom: 20px;
+  }
 }
 .mobile-menu__item:not(:last-child) {
   margin-bottom: 32px;
@@ -136,7 +136,9 @@
     color: var(--primery-accent-color);
   }
 }
+
 .mobile-contact {
+  margin-top: -10px;
   margin-bottom: 64px;
 
   &__item:last-child {

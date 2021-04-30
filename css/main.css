@@ -582,6 +582,16 @@ address {
   }
 }
 
+.mobile-menu__list {
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 479.98px) {
+  .mobile-menu__list {
+    margin-bottom: 20px;
+  }
+}
+
 .mobile-menu__item:not(:last-child) {
   margin-bottom: 32px;
 }
@@ -601,6 +611,7 @@ address {
 }
 
 .mobile-contact {
+  margin-top: -10px;
   margin-bottom: 64px;
 }
 
