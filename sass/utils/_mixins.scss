@@ -1,0 +1,14 @@
+@mixin flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@mixin centered-on-flex($display-type, $jc, $al-it) {
+  display: $display-type;
+  justify-content: $jc;
+  align-items: $al-it;
+}
+
+@mixin transition($property) {
+  transition: $property var(--animation);
+}

@@ -1,0 +1,45 @@
+.button {
+  margin: 0;
+  border-width: 0px;
+  // max-width: 200px;
+  padding: 10px 32px;
+  border-radius: 4px;
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.89;
+  letter-spacing: 0.06em;
+  color: var(--white-color);
+  background-color: var(--primery-accent-color);
+  cursor: pointer;
+
+  @include transition(background-color);
+
+  &:hover,
+  &:focus {
+    background-color: var(--secondary-accent-col);
+  }
+
+  &__footer {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 10px 28px 10px 29px;
+    border: 1px solid var(--primery-accent-color);
+
+    @media screen and (max-width: 1199.98px) {
+      margin: auto;
+      margin-top: 20px;
+    }
+  }
+  &__icon {
+    fill: currentColor;
+    margin-left: 10px;
+  }
+  &__form {
+    display: block;
+    margin: auto;
+  }
+}

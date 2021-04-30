@@ -1,0 +1,28 @@
+@import "./vendors.scss/modern-norm";
+@import "./vendors.scss/visually-hidden";
+@import "./utils/variables";
+@import "./utils/mixins";
+@import "./base/fonts";
+@import "./base/common";
+@import "./base/container";
+
+@import "./components/header";
+@import "./components/logo";
+@import "./components/menu";
+@import "./components/contact";
+@import "./components/button";
+@import "./components/backdrop";
+@import "./components/modal-button";
+@import "./components/forma";
+@import "./components/social-icon";
+
+@import "./layouts/grid-calc";
+@import "./layouts/section";
+@import "./layouts/hero";
+@import "./layouts/competence";
+@import "./layouts/work";
+@import "./layouts/team";
+@import "./layouts/clients";
+@import "./layouts/footer";
+@import "./layouts/filter";
+@import "./layouts/portfolio-galery";

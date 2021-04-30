@@ -1,0 +1,32 @@
+.competence {
+  &__item {
+    --grid-num: 1;
+
+    @media screen and (min-width: 768px) {
+      --grid-num: 2;
+    }
+    @media screen and (min-width: 1200px) {
+      --grid-num: 4;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 1.71;
+    font-weight: 400;
+    color: var(--text-primery-color);
+  }
+
+  &__bg-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--grey-color);
+    min-height: 120px;
+    margin-bottom: 30px;
+  }
+}

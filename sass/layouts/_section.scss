@@ -1,0 +1,59 @@
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1199.98px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  &--bg {
+    background-color: var(--grey-color);
+  }
+
+  &--padding-bottom {
+    padding-bottom: 60px;
+
+    @media screen and (min-width: 1199.98px) {
+      padding-bottom: 0;
+    }
+  }
+
+  &__title {
+    margin-top: 0px;
+    margin-bottom: 30px;
+
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.18;
+    text-align: center;
+
+    @media screen and (min-width: 1199.98px) {
+      font-size: 36px;
+      margin-bottom: 50px;
+    }
+  }
+}
+
+/*--заголовки -*/
+
+.heading {
+  text-align: center;
+
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+
+  @media screen and (min-width: 767.98px) {
+    text-align: left;
+  }
+
+  &--margin {
+    margin-bottom: 20px;
+
+    @media screen and (max-width: 1198.98px) {
+      text-align: center;
+    }
+  }
+}
