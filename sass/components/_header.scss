@@ -1,4 +1,5 @@
 .header {
+  position: relative;
   border-bottom: 1px solid var(--header-bottom-border);
 
   &__container {
@@ -52,7 +53,7 @@
 .is-open .icon-close {
   display: block;
 
-  fill: #212121;
+  fill: var(--text-title-color);
 }
 
 .is-open .icon-menu {
@@ -86,7 +87,6 @@
 
     &.is-open {
       right: 0;
-      overflow: hidden;
     }
   }
 }
